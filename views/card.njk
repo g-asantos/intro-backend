@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <head>
+
+            <link rel="stylesheet" href="/styles3.css">
+            
+
+        </head>
+
+        <header>
+            <h1>Rocketseat</h1>
+        </header>
+        
+        <div>
+            <h1>{{item.title}}</h1>
+        </div>
+
+        <section class="cards">
+
+            <div class='card copy' id='{{item.id}}'>
+                <div class='card__image-container'>
+                    <img src='https://skylab.rocketseat.com.br/static/{{item.img}}.svg' alt='{{item.title}}'>
+                </div>
+                <div class='card__content'>
+                    <p>{{item.title}}</p>
+                </div>
+                <div class='card__info'>
+                    <p>{{item.modules}}</p>
+                    <p>{{item.price}}</p>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+
+        <link rel="stylesheet" href="styles3.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+
+
+    <header>
+        <h1>Rocketseat</h1>
+    </header>
+
+
+    <section class="cards">
+
+
+        {% for item in items%}
+        <div class='card' id='{{item.id}}'>
+            <div class='card__image-container'>
+                <img src='https://skylab.rocketseat.com.br/static/{{item.img}}.svg'
+                    alt='{{item.title}}'>
+            </div>
+            <div class='card__content'>
+                <p>{{item.title}}</p>
+            </div>
+            <div class='card__info'>
+                <p>{{item.modules}}</p>
+                <p>{{item.price}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        
+
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class='modal'>
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+            <a class='maximize-modal'>
+                <i class="material-icons">crop_square</i>
+            </a>
+        </div>
+
+        <div class="modal-content">
+            <iframe src=""></iframe>
+        </div>
+    </div>
+
+
+
+
+    <script src="scripts.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
